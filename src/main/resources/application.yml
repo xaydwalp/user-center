@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: user-center
+  datasource:
+    url: jdbc:mysql://localhost:3306/yupi?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123zzp
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  session:
+    timeout: 86400 #设置session超时时间 1天
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  global-config: # 逻辑删除的配置（mybatis-plus的能力就是能让我们查不出来值为1的记录）这是第一个步骤，接下来我们需要将数据库中为逻辑删除的字段名称告诉MP
+    db-config:
+      logic-delete-field: false # 全局逻辑删除的实体字段名
+      logic-delete-value: 1 # 逻辑已删除值（默认为1）
+      logic-not-delete-value: 0 # 逻辑未删除值（默认为0）
