@@ -11,5 +11,6 @@ public class UserCenterApplication {
         SpringApplication.run(UserCenterApplication.class, args);
         System.out.println("second");
         System.out.println("third");
+        System.out.println("hot-fix");
     }
 }
