@@ -13,5 +13,6 @@ public class UserCenterApplication {
         System.out.println("third");
         System.out.println("hot-fix");
         System.out.println("master test");
+        System.out.println("hot-fix test");
     }
 }
