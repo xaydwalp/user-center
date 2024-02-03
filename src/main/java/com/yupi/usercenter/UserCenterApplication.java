@@ -9,10 +9,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class UserCenterApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserCenterApplication.class, args);
-        System.out.println("second");
-        System.out.println("third");
-        System.out.println("hot-fix");
-        System.out.println("master test");
-        System.out.println("hot-fix test");
     }
 }
